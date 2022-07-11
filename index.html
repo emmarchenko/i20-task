@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+0<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Таблица</title>
   <style type="text/css">
     p {
       text-align: center;
-
+    }
+    thead {
+      text-align: center;
+      font-weight: bold;
     }
     table {
       border: 1px solid grey;
@@ -15,24 +18,21 @@
       border: 1px solid grey;
       padding-left: 5px;
     }
-    .header {
-      text-align: center;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
   <main>
     <p>Сводная таблица с данными</p>
     <table width="100%">
-        <tr class = 'header'> <!-- 1 строка -->
+      <thead>               <!-- строка заголовок -->
         <td></td>
         <td>2019</td>
         <td>2020</td>
-         <td>2021</td>
-      </tr>
+        <td>2021</td>
+      </thead>
+      <tbody>
       <tr>                  <!-- 2 строка -->
-         <td>Золото</td>  
+        <td>Золото</td>  
         <td rowspan = "2">5643</td>
         <td>4533</td>
         <td>7897</td>
@@ -44,9 +44,10 @@
       </tr>
       <tr>                  <!-- 4 строка -->
         <td>Валюта</td>  
-         <td>43533</td>
+        <td>43533</td>
         <td colspan="2">34533</td>
       </tr>
+      </tbody>
     </table>
   </main>
 </body>
